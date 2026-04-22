@@ -31,14 +31,14 @@ export default function EventosSection() {
         </motion.div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 lg:gap-8 items-stretch">
           {events.map((event, i) => (
             <div
               key={event.id}
               className={
                 i === events.length - 1 && events.length % 2 !== 0
-                  ? "col-span-2 lg:col-span-1 mx-auto w-1/2 lg:w-full"
-                  : ""
+                  ? "col-span-2 lg:col-span-1 mx-auto w-1/2 lg:w-full h-full"
+                  : "h-full"
               }
             >
               <EventCard event={event} index={i} />

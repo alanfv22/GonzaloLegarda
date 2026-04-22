@@ -33,12 +33,11 @@ export default function EventCard({ event, index }: EventCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-[0_8px_30px_rgba(201,151,58,0.25)] hover:-translate-y-1.5 transition-all duration-400 flex flex-col ${event.destacado ? "ring-1 ring-primary/30" : ""
+      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-[0_8px_30px_rgba(201,151,58,0.25)] hover:-translate-y-1.5 transition-all duration-400 flex flex-col h-full ${event.destacado ? "ring-1 ring-primary/30" : ""
         }`}
     >
       {/* Carousel */}
       <div className="relative aspect-[4/3] overflow-hidden">
-        {/* Current image */}
         <Image
           key={currentIndex}
           src={event.imagenes[currentIndex]}
@@ -89,8 +88,8 @@ export default function EventCard({ event, index }: EventCardProps) {
                 onClick={(e) => { e.stopPropagation(); setCurrentIndex(i); }}
                 aria-label={`Foto ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${i === currentIndex
-                  ? "w-3 bg-white"
-                  : "w-1.5 bg-white/50 hover:bg-white/75"
+                    ? "w-3 bg-white"
+                    : "w-1.5 bg-white/50 hover:bg-white/75"
                   }`}
               />
             ))}
