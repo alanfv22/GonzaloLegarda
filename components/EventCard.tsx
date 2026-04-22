@@ -116,6 +116,7 @@ export default function EventCard({ event, index }: EventCardProps) {
           {event.nombre}
         </h3>
         <p className="font-dm-sans text-sm text-warm-gray leading-relaxed flex-1">
+          {event.descripcion}
         </p>
 
         {/* Footer button */}
