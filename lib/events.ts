@@ -10,9 +10,9 @@ export interface Event {
 export const events: Event[] = [
   {
     id: 1,
-    nombre: "Bar Mitzva",
+    nombre: "Bar Mitzvá",
     descripcion:
-      "El paso a la adultez merece una celebración a la altura. Organizamos cada detalle para que sea un momento único e irrepetible.",
+      "Una celebración que marca un antes y un después. Creamos una experiencia sofisticada donde la tradición, la emoción y la alta gastronomía se unen en perfecta armonía.",
     icono: "🕍",
     imagenes: [
       "/Imagenes/1f30b115-b7da-4d9a-a11c-8eba880b2eed.jpg",
@@ -23,9 +23,9 @@ export const events: Event[] = [
   },
   {
     id: 2,
-    nombre: "Bat Mitzva",
+    nombre: "Bat Mitzvá",
     descripcion:
-      "Un momento sagrado y festivo. Acompañamos a las familias con catering y ambientación que refleja la importancia del evento.",
+      "Elegancia, significado y celebración en su máxima expresión. Diseñamos cada detalle para acompañar este momento único con estilo, calidez y distinción.",
     icono: "✡️",
     imagenes: [
       "/Imagenes/5bdf0da8-8afe-44a0-a446-af7e39c6f2e7.jpg",
@@ -38,7 +38,7 @@ export const events: Event[] = [
     id: 3,
     nombre: "Brit Milá",
     descripcion:
-      "La primera celebración de vida. Un evento íntimo y emotivo que merece atención y cariño en cada detalle.",
+      "Un momento íntimo, profundo e irrepetible. Acompañamos esta ceremonia con una propuesta delicada, cuidando cada detalle con sensibilidad y excelencia.",
     icono: "🕯️",
     imagenes: [
       "/Imagenes/5ce77e96-f223-4667-9e84-32a801a99d71.jpg",
@@ -49,9 +49,9 @@ export const events: Event[] = [
   },
   {
     id: 9,
-    nombre: "Seder de Pesaj",
+    nombre: "Séder de Pésaj",
     descripcion:
-      "La mesa del Seder es sagrada. Preparamos todo para que la noche sea especial, siguiendo la tradición con productos de calidad.",
+      "Tradición, historia y mesa compartida. Elevamos la experiencia del Séder con una propuesta gastronómica refinada, respetando cada costumbre con precisión.",
     icono: "🍷",
     imagenes: [
       "/Imagenes/Seder (1).jpg",
@@ -64,7 +64,7 @@ export const events: Event[] = [
     id: 4,
     nombre: "Cumpleaños",
     descripcion:
-      "Porque cada año que pasa merece festejarse con todo. Bocados únicos, presentación impecable y mucha alegría.",
+      "Celebrar también puede ser extraordinario. Creamos experiencias a medida con una impronta estética y gastronómica que transforma cada festejo en algo único.",
     icono: "🎂",
     imagenes: [
       "/Imagenes/6c4d4e31-af1b-4c5e-aace-c4bc556490ef.jpg",
@@ -77,7 +77,7 @@ export const events: Event[] = [
     id: 5,
     nombre: "Aniversarios",
     descripcion:
-      "Años compartidos, momentos únicos. Celebrá con sabores que van a hacer del aniversario algo que no van a olvidar más.",
+      "El paso del tiempo merece ser celebrado con elegancia. Diseñamos encuentros memorables donde cada detalle transmite emoción, estilo y sofisticación.",
     icono: "💛",
     imagenes: [
       "/Imagenes/23b4fa9d-99c4-46d6-89c8-89c887127aad.jpg",
@@ -90,7 +90,7 @@ export const events: Event[] = [
     id: 6,
     nombre: "Casamientos",
     descripcion:
-      "El día más especial merece el catering más especial. Desde el cóctel hasta el postre, todo pensado para emocionar.",
+      "Una experiencia inolvidable, pensada en cada instante. Creamos propuestas gastronómicas de alto nivel que acompañan y realzan uno de los días más importantes.",
     icono: "💍",
     imagenes: [
       "/Imagenes/63e03ae2-e879-4e75-a040-50f645a10e59.jpg",
@@ -103,7 +103,7 @@ export const events: Event[] = [
     id: 7,
     nombre: "Té de lluvia",
     descripcion:
-      "Una tarde cálida para recibir al bebé que viene. Pastelería fina, decoración delicada y mucho amor en cada bocado.",
+      "Un encuentro delicado y lleno de emoción. Pastelería fina, estética cuidada y una atmósfera pensada para celebrar cada instante con dulzura y elegancia.",
     icono: "🍰",
     imagenes: [
       "/Imagenes/301edf8d-968a-4c3b-8eb3-3bc59727ad85.jpg",
@@ -116,7 +116,7 @@ export const events: Event[] = [
     id: 8,
     nombre: "Coffee Break",
     descripcion:
-      "Para reuniones, eventos corporativos o encuentros especiales. Presentación profesional y sabor en cada detalle.",
+      "Minimalismo, calidad y precisión. Ofrecemos un servicio corporativo de alto nivel, donde cada detalle refleja profesionalismo y excelencia.",
     icono: "☕",
     imagenes: [
       "/Imagenes/b619c2cf-d027-4e8a-8f81-c6b00ae2022b.jpg",
