@@ -48,6 +48,19 @@ export const events: Event[] = [
     destacado: false,
   },
   {
+    id: 9,
+    nombre: "Seder de Pesaj",
+    descripcion:
+      "La mesa del Seder es sagrada. Preparamos todo para que la noche sea especial, siguiendo la tradición con productos de calidad.",
+    icono: "🍷",
+    imagenes: [
+      "/Imagenes/Seder (1).jpg",
+      "/Imagenes/Seder (2).jpg",
+      "/Imagenes/Seder (3).jpg",
+    ],
+    destacado: true,
+  },
+  {
     id: 4,
     nombre: "Cumpleaños",
     descripcion:
@@ -111,18 +124,5 @@ export const events: Event[] = [
       "/Imagenes/939b4cde-986e-40da-8c7c-9ad71721b8fe.jpg",
     ],
     destacado: false,
-  },
-  {
-    id: 9,
-    nombre: "Seder de Pesaj",
-    descripcion:
-      "La mesa del Seder es sagrada. Preparamos todo para que la noche sea especial, siguiendo la tradición con productos de calidad.",
-    icono: "🍷",
-    imagenes: [
-      "/Imagenes/Seder (1).jpg",
-      "/Imagenes/Seder (2).jpg",
-      "/Imagenes/Seder (3).jpg",
-    ],
-    destacado: true,
   },
 ];
