@@ -33,9 +33,8 @@ export default function EventCard({ event, index }: EventCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-[0_8px_30px_rgba(201,151,58,0.25)] hover:-translate-y-1.5 transition-all duration-400 flex flex-col ${
-        event.destacado ? "ring-1 ring-primary/30" : ""
-      }`}
+      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-[0_8px_30px_rgba(201,151,58,0.25)] hover:-translate-y-1.5 transition-all duration-400 flex flex-col ${event.destacado ? "ring-1 ring-primary/30" : ""
+        }`}
     >
       {/* Carousel */}
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -49,8 +48,8 @@ export default function EventCard({ event, index }: EventCardProps) {
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
 
-        {/* Hover overlay with CTA */}
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 z-10">
+        {/* Hover overlay with CTA — oculto en mobile */}
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:flex items-end justify-center pb-6 z-10">
           <button
             onClick={() => openModal(event.nombre)}
             className="font-dm-sans font-semibold text-sm bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-colors shadow-lg min-h-[44px] flex items-center cursor-pointer"
@@ -64,7 +63,7 @@ export default function EventCard({ event, index }: EventCardProps) {
           <button
             onClick={prev}
             aria-label="Foto anterior"
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 hover:bg-black/75 text-white text-xl leading-none transition-all opacity-0 group-hover:opacity-100 cursor-pointer"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 hover:bg-black/75 text-white text-xl leading-none transition-all sm:opacity-0 sm:group-hover:opacity-100 cursor-pointer"
           >
             ‹
           </button>
@@ -75,7 +74,7 @@ export default function EventCard({ event, index }: EventCardProps) {
           <button
             onClick={next}
             aria-label="Foto siguiente"
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 hover:bg-black/75 text-white text-xl leading-none transition-all opacity-0 group-hover:opacity-100 cursor-pointer"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 hover:bg-black/75 text-white text-xl leading-none transition-all sm:opacity-0 sm:group-hover:opacity-100 cursor-pointer"
           >
             ›
           </button>
@@ -89,11 +88,10 @@ export default function EventCard({ event, index }: EventCardProps) {
                 key={i}
                 onClick={(e) => { e.stopPropagation(); setCurrentIndex(i); }}
                 aria-label={`Foto ${i + 1}`}
-                className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
-                  i === currentIndex
+                className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${i === currentIndex
                     ? "w-3 bg-white"
                     : "w-1.5 bg-white/50 hover:bg-white/75"
-                }`}
+                  }`}
               />
             ))}
           </div>
