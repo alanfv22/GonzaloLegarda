@@ -15,9 +15,7 @@ export const events: Event[] = [
       "Una celebración que marca un antes y un después. Creamos una experiencia sofisticada donde la tradición, la emoción y la alta gastronomía se unen en perfecta armonía.",
     icono: "🕍",
     imagenes: [
-      "/Imagenes/1f30b115-b7da-4d9a-a11c-8eba880b2eed.jpg",
-      "/Imagenes/5bdf0da8-8afe-44a0-a446-af7e39c6f2e7.jpg",
-      "/Imagenes/5ce77e96-f223-4667-9e84-32a801a99d71.jpg",
+      "/Imagenes/barmitzva.png",
     ],
     destacado: true,
   },
@@ -28,9 +26,7 @@ export const events: Event[] = [
       "Elegancia, significado y celebración en su máxima expresión. Diseñamos cada detalle para acompañar este momento único con estilo, calidez y distinción.",
     icono: "✡️",
     imagenes: [
-      "/Imagenes/5bdf0da8-8afe-44a0-a446-af7e39c6f2e7.jpg",
-      "/Imagenes/6c4d4e31-af1b-4c5e-aace-c4bc556490ef.jpg",
-      "/Imagenes/23b4fa9d-99c4-46d6-89c8-89c887127aad.jpg",
+      "/Imagenes/Batmitzva.png",
     ],
     destacado: true,
   },
@@ -41,9 +37,8 @@ export const events: Event[] = [
       "Un momento íntimo, profundo e irrepetible. Acompañamos esta ceremonia con una propuesta delicada, cuidando cada detalle con sensibilidad y excelencia.",
     icono: "🕯️",
     imagenes: [
-      "/Imagenes/5ce77e96-f223-4667-9e84-32a801a99d71.jpg",
-      "/Imagenes/301edf8d-968a-4c3b-8eb3-3bc59727ad85.jpg",
-      "/Imagenes/b619c2cf-d027-4e8a-8f81-c6b00ae2022b.jpg",
+      "/Imagenes/britmila1.png",
+      "/Imagenes/britmila.png"
     ],
     destacado: false,
   },
@@ -69,7 +64,6 @@ export const events: Event[] = [
     imagenes: [
       "/Imagenes/6c4d4e31-af1b-4c5e-aace-c4bc556490ef.jpg",
       "/Imagenes/a07805e5-6ba2-4fdd-b285-61e88d4e126c.jpg",
-      "/Imagenes/ccf08a4a-8d56-42e0-9373-6c0eb8be4285.jpg",
     ],
     destacado: false,
   },
@@ -80,9 +74,7 @@ export const events: Event[] = [
       "El paso del tiempo merece ser celebrado con elegancia. Diseñamos encuentros memorables donde cada detalle transmite emoción, estilo y sofisticación.",
     icono: "💛",
     imagenes: [
-      "/Imagenes/23b4fa9d-99c4-46d6-89c8-89c887127aad.jpg",
-      "/Imagenes/63e03ae2-e879-4e75-a040-50f645a10e59.jpg",
-      "/Imagenes/e6bc9499-4dae-4d50-9284-fd467ab251d7.jpg",
+      "/Imagenes/casamiento1.png",
     ],
     destacado: false,
   },
@@ -93,9 +85,8 @@ export const events: Event[] = [
       "Una experiencia inolvidable, pensada en cada instante. Creamos propuestas gastronómicas de alto nivel que acompañan y realzan uno de los días más importantes.",
     icono: "💍",
     imagenes: [
-      "/Imagenes/63e03ae2-e879-4e75-a040-50f645a10e59.jpg",
-      "/Imagenes/1f30b115-b7da-4d9a-a11c-8eba880b2eed.jpg",
-      "/Imagenes/a07805e5-6ba2-4fdd-b285-61e88d4e126c.jpg",
+      "/Imagenes/casamiento.png",
+      "/Imagenes/casamiento1.png"
     ],
     destacado: true,
   },
@@ -108,7 +99,6 @@ export const events: Event[] = [
     imagenes: [
       "/Imagenes/301edf8d-968a-4c3b-8eb3-3bc59727ad85.jpg",
       "/Imagenes/ccf08a4a-8d56-42e0-9373-6c0eb8be4285.jpg",
-      "/Imagenes/b619c2cf-d027-4e8a-8f81-c6b00ae2022b.jpg",
     ],
     destacado: false,
   },
@@ -119,9 +109,7 @@ export const events: Event[] = [
       "Minimalismo, calidad y precisión. Ofrecemos un servicio corporativo de alto nivel, donde cada detalle refleja profesionalismo y excelencia.",
     icono: "☕",
     imagenes: [
-      "/Imagenes/b619c2cf-d027-4e8a-8f81-c6b00ae2022b.jpg",
-      "/Imagenes/5bdf0da8-8afe-44a0-a446-af7e39c6f2e7.jpg",
-      "/Imagenes/939b4cde-986e-40da-8c7c-9ad71721b8fe.jpg",
+      "/Imagenes/coffebreak.png",
     ],
     destacado: false,
   },
