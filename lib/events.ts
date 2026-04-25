@@ -63,10 +63,11 @@ export const events: Event[] = [
       "Celebrar también puede ser extraordinario. Creamos experiencias a medida con una impronta estética y gastronómica que transforma cada festejo en algo único.",
     icono: "🎂",
     imagenes: [
-      "/Imagenes/6c4d4e31-af1b-4c5e-aace-c4bc556490ef.jpg",
-      "/Imagenes/a07805e5-6ba2-4fdd-b285-61e88d4e126c.jpg",
+      "/Imagenes/cumpleaños.png",
+
     ],
     destacado: false,
+    objectFit: "cover" as const,
   },
   {
     id: 5,
@@ -75,7 +76,7 @@ export const events: Event[] = [
       "El paso del tiempo merece ser celebrado con elegancia. Diseñamos encuentros memorables donde cada detalle transmite emoción, estilo y sofisticación.",
     icono: "💛",
     imagenes: [
-      "/Imagenes/casamiento1.png",
+      "/Imagenes/aniversario.png",
     ],
     destacado: false,
   },
@@ -90,6 +91,7 @@ export const events: Event[] = [
       "/Imagenes/casamiento1.png"
     ],
     destacado: true,
+    objectFit: "cover" as const,
   },
   {
     id: 7,
@@ -100,8 +102,10 @@ export const events: Event[] = [
     imagenes: [
       "/Imagenes/301edf8d-968a-4c3b-8eb3-3bc59727ad85.jpg",
       "/Imagenes/ccf08a4a-8d56-42e0-9373-6c0eb8be4285.jpg",
+
     ],
     destacado: false,
+    objectFit: "cover" as const,
   },
   {
     id: 8,
