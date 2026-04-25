@@ -47,6 +47,19 @@ export default function EventCard({ event, index }: EventCardProps) {
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
 
+        {event.imagenes.map((src, i) => (
+          i !== currentIndex && (
+            <Image
+              key={`preload-${i}`}
+              src={src}
+              alt=""
+              fill
+              className="opacity-0 pointer-events-none"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            />
+          )
+        ))}
+
         {/* Hover overlay with CTA — oculto en mobile */}
         <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:flex items-end justify-center pb-6 z-10">
           <button
