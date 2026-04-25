@@ -55,7 +55,6 @@ export default function EventCard({ event, index }: EventCardProps) {
 
         {/* Current image */}
         <Image
-          key={currentIndex}
           src={event.imagenes[currentIndex]}
           alt={`${event.nombre} — Gonzalo Legarda Cocina Judía`}
           fill
@@ -104,8 +103,8 @@ export default function EventCard({ event, index }: EventCardProps) {
                 onClick={(e) => { e.stopPropagation(); setCurrentIndex(i); }}
                 aria-label={`Foto ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${i === currentIndex
-                    ? "w-3 bg-white"
-                    : "w-1.5 bg-white/50 hover:bg-white/75"
+                  ? "w-3 bg-white"
+                  : "w-1.5 bg-white/50 hover:bg-white/75"
                   }`}
               />
             ))}
