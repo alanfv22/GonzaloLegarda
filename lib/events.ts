@@ -5,6 +5,7 @@ export interface Event {
   icono: string;
   imagenes: string[];
   destacado: boolean;
+  objectFit?: "cover" | "contain";
 }
 
 export const events: Event[] = [
@@ -112,5 +113,6 @@ export const events: Event[] = [
       "/Imagenes/coffebreak.png",
     ],
     destacado: false,
+    objectFit: "cover" as const,
   },
 ];

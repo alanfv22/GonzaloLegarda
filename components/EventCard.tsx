@@ -37,13 +37,13 @@ export default function EventCard({ event, index }: EventCardProps) {
         }`}
     >
       {/* Carousel */}
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-[3/4] overflow-hidden bg-[#FDF6EC]">
         <Image
           key={currentIndex}
           src={event.imagenes[currentIndex]}
           alt={`${event.nombre} — Gonzalo Legarda Cocina Judía`}
           fill
-          className="object-contain transition-opacity duration-500"
+          className={`${event.objectFit === "cover" ? "object-cover object-center" : "object-contain"} transition-opacity duration-500`}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
 
