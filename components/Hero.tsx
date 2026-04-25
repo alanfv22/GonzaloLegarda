@@ -62,9 +62,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="font-dm-sans text-base sm:text-lg text-cream/75 mb-10 max-w-xl leading-relaxed"
           >
-            Catering exclusivo con recetas judías auténticas, ingredientes de
-            primera calidad y una presentación impecable que hace de cada
-            celebración una experiencia única.
+            Nuestro servicio de catering ofrece una fusión exquisita de tradición y refinamiento. Cada evento se convierte en una experiencia cultural y sensorial, cuidando cada detalle para que tus celebraciones sean inolvidables.
           </motion.p>
 
           {/* CTAs */}

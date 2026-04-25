@@ -24,9 +24,7 @@ export default function EventosSection() {
             <br className="hidden sm:block" /> en la memoria
           </h2>
           <p className="font-dm-sans text-base text-warm-gray max-w-xl mx-auto leading-relaxed">
-            Cada evento tiene su ritual, su historia y su sabor. Acompañamos
-            cada etapa con dedicación, cocina judía auténtica y catering de
-            primer nivel.
+            Armamos el evento de tus sueños a tu medida.
           </p>
         </motion.div>
 
