@@ -38,15 +38,8 @@ export default function EventCard({ event, index }: EventCardProps) {
     >
       {/* Carousel */}
       <div className="relative aspect-[3/4] overflow-hidden bg-[#FDF6EC]">
-        <Image
-          key={currentIndex}
-          src={event.imagenes[currentIndex]}
-          alt={`${event.nombre} — Gonzalo Legarda Cocina Judía`}
-          fill
-          className={`${event.objectFit === "cover" ? "object-cover object-center" : "object-contain"} transition-opacity duration-500`}
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        />
 
+        {/* Preload all images */}
         {event.imagenes.map((src, i) => (
           i !== currentIndex && (
             <Image
@@ -59,6 +52,16 @@ export default function EventCard({ event, index }: EventCardProps) {
             />
           )
         ))}
+
+        {/* Current image */}
+        <Image
+          key={currentIndex}
+          src={event.imagenes[currentIndex]}
+          alt={`${event.nombre} — Gonzalo Legarda Cocina Judía`}
+          fill
+          className={`${event.objectFit === "cover" ? "object-cover object-center" : "object-contain"} transition-none`}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+        />
 
         {/* Hover overlay with CTA — oculto en mobile */}
         <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:flex items-end justify-center pb-6 z-10">
@@ -101,8 +104,8 @@ export default function EventCard({ event, index }: EventCardProps) {
                 onClick={(e) => { e.stopPropagation(); setCurrentIndex(i); }}
                 aria-label={`Foto ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${i === currentIndex
-                  ? "w-3 bg-white"
-                  : "w-1.5 bg-white/50 hover:bg-white/75"
+                    ? "w-3 bg-white"
+                    : "w-1.5 bg-white/50 hover:bg-white/75"
                   }`}
               />
             ))}
