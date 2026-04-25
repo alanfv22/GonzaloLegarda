@@ -43,7 +43,7 @@ export default function EventCard({ event, index }: EventCardProps) {
           src={event.imagenes[currentIndex]}
           alt={`${event.nombre} — Gonzalo Legarda Cocina Judía`}
           fill
-          className="object-cover object-center transition-opacity duration-500"
+          className="object-contain transition-opacity duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
 
