@@ -17,14 +17,14 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/Imagenes/FotoPrincipal.png"
-          alt="Celebración judía elegante — Garda Eventos"
+          alt="Celebración judía elegante — Gonzalo Legarda"
           fill
           priority
           quality={100}
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2D2A26]/90 via-[#2D2A26]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2D2A26]/95 via-[#2D2A26]/75 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#2D2A26]/70 via-transparent to-transparent" />
       </div>
 
@@ -48,7 +48,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="font-playfair font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-cream leading-tight mb-6"
+            className="font-playfair font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-cream leading-tight mb-6 drop-shadow-lg"
           >
             Cada evento es
             <br />
@@ -60,7 +60,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="font-dm-sans text-base sm:text-lg text-cream/75 mb-10 max-w-xl leading-relaxed"
+            className="font-dm-sans text-base sm:text-lg text-cream/90 mb-10 max-w-xl leading-relaxed drop-shadow-md"
           >
             Nuestro servicio de catering ofrece una fusión exquisita de tradición y refinamiento. Cada evento se convierte en una experiencia cultural y sensorial, cuidando cada detalle para que tus celebraciones sean inolvidables.
           </motion.p>
