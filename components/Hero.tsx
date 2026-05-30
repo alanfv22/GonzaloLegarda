@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Imagenes/FotoPrincipal.png"
+          src="/Imagenes/portada.png"
           alt="Celebración judía elegante — Gonzalo Legarda"
           fill
           priority
