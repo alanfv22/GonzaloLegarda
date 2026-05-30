@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import EventosSection from "@/components/EventosSection";
+import QuienSoy from "@/components/QuienSoy";
+import ReviewsSection from "@/components/ReviewsSection";
 import WhyUs from "@/components/WhyUs";
 import CtaFinal from "@/components/CtaFinal";
 import MenuShabatPlaceholder from "@/components/MenuShabatPlaceholder";
@@ -15,6 +17,8 @@ export default function Home() {
       <main>
         <Hero />
         <EventosSection />
+        <QuienSoy />
+        <ReviewsSection />
         <WhyUs />
         <CtaFinal />
         <MenuShabatPlaceholder />

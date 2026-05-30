@@ -3,43 +3,28 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 function InstagramIcon({ size = 18 }: { size?: number }) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
     </svg>
   );
 }
-import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 const navLinks = [
   { label: "Eventos", href: "#eventos" },
+  { label: "Quién soy", href: "#quien-soy" },
+  { label: "Reseñas", href: "#resenas" },
   { label: "Menú Shabat", href: "#menu-shabat" },
 ];
 
 function StarOfDavid() {
   return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="text-primary inline-block"
-      aria-hidden="true"
-    >
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-primary inline-block" aria-hidden="true">
       <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
     </svg>
   );
@@ -68,14 +53,11 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-secondary/95 backdrop-blur-md shadow-lg shadow-black/20"
-            : "bg-transparent"
+          scrolled ? "bg-secondary/95 backdrop-blur-md shadow-lg shadow-black/20" : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
             <a
               href="#"
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
@@ -95,7 +77,6 @@ export default function Navbar() {
               </div>
             </a>
 
-            {/* Desktop nav */}
             <nav className="hidden md:flex items-center gap-8" aria-label="Navegación principal">
               {navLinks.map((link) => (
                 <button
@@ -118,7 +99,6 @@ export default function Navbar() {
               </a>
             </nav>
 
-            {/* Mobile hamburger */}
             <button
               className="md:hidden p-2 text-cream hover:text-primary transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -130,7 +110,6 @@ export default function Navbar() {
         </div>
       </motion.header>
 
-      {/* Mobile drawer */}
       <AnimatePresence>
         {mobileOpen && (
           <>
