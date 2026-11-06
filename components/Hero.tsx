@@ -20,7 +20,6 @@ export default function Hero() {
           alt="Celebración judía elegante — Gonzalo Legarda"
           fill
           priority
-          quality={100}
           className="object-cover object-center"
           sizes="100vw"
         />

@@ -26,7 +26,6 @@ export default function QuienSoy() {
                 src="/Imagenes/QuienSoy.jpeg"
                 alt="Gonzalo Legarda — Cocina Judía"
                 fill
-                priority
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />

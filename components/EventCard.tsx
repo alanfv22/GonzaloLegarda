@@ -33,36 +33,25 @@ export default function EventCard({ event, index }: EventCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-[0_8px_30px_rgba(201,151,58,0.25)] hover:-translate-y-1.5 transition-all duration-400 flex flex-col h-full ${event.destacado ? "ring-1 ring-primary/30" : ""
+      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-[0_8px_30px_rgba(201,151,58,0.25)] hover:-translate-y-1.5 transition-[box-shadow,translate] duration-300 flex flex-col h-full ${event.destacado ? "ring-1 ring-primary/30" : ""
         }`}
     >
       {/* Carousel */}
       <div className="relative aspect-[3/4] overflow-hidden bg-[#FDF6EC]">
 
-        {/* Preload all images */}
+        {/* Todas las fotos quedan montadas y apiladas; solo cambia la opacidad.
+            Así el navegador no vuelve a descargar ni decodificar al cambiar de foto. */}
         {event.imagenes.map((src, i) => (
-          i !== currentIndex && (
-            <Image
-              key={`preload-${i}`}
-              src={src}
-              alt=""
-              fill
-              priority
-              className="opacity-0 pointer-events-none"
-              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-            />
-          )
+          <Image
+            key={src}
+            src={src}
+            alt={i === currentIndex ? `${event.nombre} — Gonzalo Legarda Cocina Judía` : ""}
+            aria-hidden={i !== currentIndex}
+            fill
+            className={`${event.objectFit === "cover" ? "object-cover object-center" : "object-contain"} transition-opacity duration-300 ${i === currentIndex ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          />
         ))}
-
-        {/* Current image */}
-        <Image
-          src={event.imagenes[currentIndex]}
-          alt={`${event.nombre} — Gonzalo Legarda Cocina Judía`}
-          fill
-          priority
-          className={`${event.objectFit === "cover" ? "object-cover object-center" : "object-contain"} transition-none`}
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        />
 
         {/* Hover overlay with CTA — oculto en mobile */}
         <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:flex items-end justify-center pb-6 z-10">

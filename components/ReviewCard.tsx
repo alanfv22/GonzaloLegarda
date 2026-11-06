@@ -57,6 +57,7 @@ export default function ReviewCard({ review, index }: ReviewCardProps) {
             src={review.foto_url}
             alt={`Foto de ${review.nombre}`}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover"
           />
         </div>
