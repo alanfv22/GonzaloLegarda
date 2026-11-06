@@ -17,6 +17,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gonzalo-legarda.vercel.app"),
   title: "Gonzalo Legarda | Cocina Judía",
   description:
     "Catering exclusivo con recetas judías auténticas, ingredientes de primera calidad y presentación impecable. Ideal para Bar Mitzva, Casamientos, Seder de Pesaj y más celebraciones.",
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
     title: "Gonzalo Legarda | Cocina Judía",
     description:
       "Cada evento es un viaje a la tradición. Catering judío auténtico para tus celebraciones más especiales.",
+    url: "/",
+    siteName: "Gonzalo Legarda | Cocina Judía",
     locale: "es_AR",
     type: "website",
   },
