@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -45,7 +46,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${playfair.variable} ${dmSans.variable} h-full`}>
-      <body className="antialiased min-h-full flex flex-col">{children}</body>
+      <body className="antialiased min-h-full flex flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
